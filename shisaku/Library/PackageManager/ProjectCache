@@ -5,21 +5,32 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638195492878913507
     m_Hash: 942797434
+=======
+      ticks: 638192475840000000
+    m_Hash: 2179545133
+>>>>>>> 96beb4eb34567aefafc08fbebfd227c31bc30924
   m_LockFileStatus:
     m_FilePath: C:/Users/cre/Documents/satou/shisaku/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638195492878923511
     m_Hash: 3493869938
+=======
+      ticks: 638192475840000000
+    m_Hash: 2938240336
+>>>>>>> 96beb4eb34567aefafc08fbebfd227c31bc30924
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+<<<<<<< HEAD
     - packageId: com.unity.2d.animation@5.0.10
       testable: 0
       isDirectDependency: 1
@@ -447,6 +458,8 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/2d.git
         revision: 341b7316671d7e6703a7627f67c5fab262c4f1ac
         path: 
+=======
+>>>>>>> 96beb4eb34567aefafc08fbebfd227c31bc30924
     - packageId: com.unity.2d.sprite@1.0.0
       testable: 0
       isDirectDependency: 1

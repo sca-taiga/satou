@@ -17,7 +17,7 @@ public class CubeC : MonoBehaviour
 
     private void Update()
     {
-        Speed = playercontroller.PlayerSpeed;
+        //Speed = playercontroller.PlayerSpeed;
     }
     private void FixedUpdate()
     {
@@ -39,8 +39,10 @@ public class CubeC : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
+                Debug.Log("“®‚­");
+                Speed = playercontroller.PlayerSpeed;
                 transform.position += new Vector3(Speed, 0, 0);
             }
         }
