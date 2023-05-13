@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 1033211353}
   - component: {fileID: 1033211355}
   m_Layer: 0
-  m_Name: "\u30D7\u30EC\u30A4\u30E4\u30FC"
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1070,7 +1070,7 @@ GameObject:
   - component: {fileID: 1415032487}
   - component: {fileID: 1415032486}
   m_Layer: 0
-  m_Name: "\u30C9\u30A2"
+  m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1172,7 +1172,7 @@ GameObject:
   - component: {fileID: 1998473841}
   - component: {fileID: 1998473843}
   m_Layer: 0
-  m_Name: "\u30B9\u30A4\u30C3\u30C1"
+  m_Name: Switch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
