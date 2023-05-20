@@ -15,11 +15,19 @@ C:/Users/cre/Documents/satou/shisaku
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 58812
 Successfully changed project path to: C:/Users/cre/Documents/satou/shisaku
 C:/Users/cre/Documents/satou/shisaku
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 49.21 ms, found 2 plugins.
+=======
+58023
+Successfully changed project path to: C:/Users/cre/Documents/satou/shisaku
+C:/Users/cre/Documents/satou/shisaku
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 31.41 ms, found 2 plugins.
+>>>>>>> 53ff39e690cd0361944d166aa2f2bda24b33d48a
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.26f1 (7298b473bc1a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -35,6 +43,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -48,11 +57,27 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (658ms)
 		BeginReloadAssembly (41ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000951 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 28.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.387 seconds
+Domain Reload Profiling:
+	ReloadAssembly (387ms)
+		BeginReloadAssembly (34ms)
+>>>>>>> 53ff39e690cd0361944d166aa2f2bda24b33d48a
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (504ms)
 			LoadAssemblies (40ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -67,12 +92,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (24ms)
 				ProcessInitializeOnLoadAttributes (103ms)
 				ProcessInitializeOnLoadMethodAttributes (26ms)
+=======
+		EndReloadAssembly (303ms)
+			LoadAssemblies (32ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (97ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (116ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (29ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (53ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+>>>>>>> 53ff39e690cd0361944d166aa2f2bda24b33d48a
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.003491 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -83,10 +125,23 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1207ms)
 		BeginReloadAssembly (168ms)
+=======
+Registered in 0.002452 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.702 seconds
+Domain Reload Profiling:
+	ReloadAssembly (702ms)
+		BeginReloadAssembly (94ms)
+>>>>>>> 53ff39e690cd0361944d166aa2f2bda24b33d48a
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (25ms)
 		EndReloadAssembly (972ms)
 			LoadAssemblies (111ms)
@@ -118,6 +173,39 @@ System memory in use after: 87.4 MB.
 
 Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2286.
 Total: 2.342200 ms (FindLiveObjects: 0.114600 ms CreateObjectMapping: 0.039600 ms MarkObjects: 2.122200 ms  DeleteObjects: 0.064900 ms)
+=======
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (567ms)
+			LoadAssemblies (55ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (206ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (211ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (135ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1847 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.2 MB.
+System memory in use after: 87.3 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2284.
+Total: 2.205500 ms (FindLiveObjects: 0.107200 ms CreateObjectMapping: 0.028600 ms MarkObjects: 1.999600 ms  DeleteObjects: 0.069300 ms)
+>>>>>>> 53ff39e690cd0361944d166aa2f2bda24b33d48a
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,6 +219,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   path: Assets/Scenes/Clear.unity
   artifactKey: Guid(3b68aa5519d69fd46af7abf0530a4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/Clear.unity using Guid(3b68aa5519d69fd46af7abf0530a4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f669f2e6a0f032cdaf81f9ebb81609') in 0.011767 seconds 
@@ -193,3 +282,114 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+  path: Assets/taiga/アニメーション/aoi 1.png
+  artifactKey: Guid(a0072ccfd992f3b49969b8c6a75291da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/aoi 1.png using Guid(a0072ccfd992f3b49969b8c6a75291da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de58f83457e627d9e9367991a565f7ca') in 0.060575 seconds 
+  Import took 0.062932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.419918 seconds.
+  path: Assets/taiga/アニメーション/Switch.png
+  artifactKey: Guid(b6eb2606fa5db0a4b8c138ffb2288ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/Switch.png using Guid(b6eb2606fa5db0a4b8c138ffb2288ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4562db6cf8536132a051c88af8dc9705') in 0.013242 seconds 
+  Import took 0.015751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.140972 seconds.
+  path: Assets/taiga/アニメーション/Switch 2.png
+  artifactKey: Guid(012dd58fc41cf714680adc73df097c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/Switch 2.png using Guid(012dd58fc41cf714680adc73df097c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e294997c3350f3068f3364d7f49e094e') in 0.013091 seconds 
+  Import took 0.015621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.935295 seconds.
+  path: Assets/taiga/アニメーション/Switcn.controller
+  artifactKey: Guid(c322a6235c0460a49993ae37683a02e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/Switcn.controller using Guid(c322a6235c0460a49993ae37683a02e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f12fbce6af34960cc8cdccc9432e57') in 0.010661 seconds 
+  Import took 0.014981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.708631 seconds.
+  path: Assets/taiga/アニメーション/ドア.controller
+  artifactKey: Guid(2d36122ab95ef0d488edffa2cb786e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/ドア.controller using Guid(2d36122ab95ef0d488edffa2cb786e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b6a6b7f4730ea605cd601b85ddb8257') in 0.002364 seconds 
+  Import took 0.004776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.407383 seconds.
+  path: Assets/taiga/アニメーション/door.controller
+  artifactKey: Guid(2d36122ab95ef0d488edffa2cb786e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/door.controller using Guid(2d36122ab95ef0d488edffa2cb786e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e762b6619da924fe9ba82f943d07af9') in 0.002217 seconds 
+  Import took 0.004769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.140937 seconds.
+  path: Assets/taiga/アニメーション/プレイヤー.controller
+  artifactKey: Guid(2d7efd8913ba833458e41b66ed19d6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/プレイヤー.controller using Guid(2d7efd8913ba833458e41b66ed19d6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41828a1eabf0fef9debe4a6872de6b19') in 0.002523 seconds 
+  Import took 0.004957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.564615 seconds.
+  path: Assets/taiga/アニメーション/player.controller
+  artifactKey: Guid(2d7efd8913ba833458e41b66ed19d6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/player.controller using Guid(2d7efd8913ba833458e41b66ed19d6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f02f35e52d4642b845584cf3a312f72f') in 0.002373 seconds 
+  Import took 0.004991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.055462 seconds.
+  path: Assets/taiga/アニメーション/player 1.png
+  artifactKey: Guid(a0072ccfd992f3b49969b8c6a75291da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/player 1.png using Guid(a0072ccfd992f3b49969b8c6a75291da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb25c980275528a71bbddb98f59a5e6') in 0.009152 seconds 
+  Import took 0.011875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.300071 seconds.
+  path: Assets/taiga/アニメーション/player 2.png
+  artifactKey: Guid(43b1150e542c82b4abe6d4a260acd7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/player 2.png using Guid(43b1150e542c82b4abe6d4a260acd7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e51f8309b74f6f1aab2aa13314512fc') in 0.009696 seconds 
+  Import took 0.012279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.387246 seconds.
+  path: Assets/taiga/アニメーション/player 3.png
+  artifactKey: Guid(437aa926b5a96e4488b74c59514fa422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/player 3.png using Guid(437aa926b5a96e4488b74c59514fa422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395c45fdb296edc352a4d2ce97c0fd4b') in 0.011212 seconds 
+  Import took 0.013769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1859.566889 seconds.
+  path: Assets/Prefab/Box.prefab
+  artifactKey: Guid(dcebdb0a4cb688b43b915080fcd58e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Box.prefab using Guid(dcebdb0a4cb688b43b915080fcd58e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27aa07c5ba65ff0e936e2d4e66d37302') in 0.010655 seconds 
+  Import took 0.014674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.007407 seconds.
+  path: Assets/taiga/アニメーション/player.anim
+  artifactKey: Guid(a51fcc7da888b2945ab9a5917e458891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/player.anim using Guid(a51fcc7da888b2945ab9a5917e458891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779922636fb471b40408781bd97eeb7f') in 0.005575 seconds 
+  Import took 0.008110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.340415 seconds.
+  path: Assets/taiga/アニメーション/bbotann.anim
+  artifactKey: Guid(e94a28e2a529e034d9a808b5c603bf9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/bbotann.anim using Guid(e94a28e2a529e034d9a808b5c603bf9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddd131cdcc7e1111d2faf08545fb4d9b') in 0.003277 seconds 
+  Import took 0.006121 seconds .
+
+>>>>>>> 53ff39e690cd0361944d166aa2f2bda24b33d48a

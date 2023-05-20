@@ -5,16 +5,26 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638192475840000000
     m_Hash: 2179545133
+=======
+      ticks: 638195617101061695
+    m_Hash: 3144771015
+>>>>>>> 53ff39e690cd0361944d166aa2f2bda24b33d48a
   m_LockFileStatus:
     m_FilePath: C:/Users/cre/Documents/satou/shisaku/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638192475840000000
     m_Hash: 2938240336
+=======
+      ticks: 638195617101061695
+    m_Hash: 3371265300
+>>>>>>> 53ff39e690cd0361944d166aa2f2bda24b33d48a
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

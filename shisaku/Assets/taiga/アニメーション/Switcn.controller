@@ -32,7 +32,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u30B9\u30A4\u30C3\u30C1"
+  m_Name: Switcn
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
