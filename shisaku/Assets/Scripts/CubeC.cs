@@ -11,20 +11,15 @@ public class CubeC : MonoBehaviour
     private bool isGround = false;
     private float Speed;
 
-    private void Start()
-    {
-    }
+    private GameObject WallL;
+    private GameObject WallR;
 
-    private void Update()
-    {
-        //Speed = playercontroller.PlayerSpeed;
-    }
     private void FixedUpdate()
     {
+        Speed = playercontroller.PlayerSpeed;
         isGround = ground.IsGround();
         Gravity();
     }
-
 
 
     private void Gravity()
@@ -39,13 +34,17 @@ public class CubeC : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                Debug.Log("“®‚­");
-                Speed = playercontroller.PlayerSpeed;
                 transform.position += new Vector3(Speed, 0, 0);
             }
         }
+        
+        if(other.gameObject.tag == "Wall")
+        {
+            transform.position += new Vector3(-Speed, 0,0);
+        }
     }
+
 
 }

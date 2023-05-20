@@ -10,18 +10,22 @@ public class PlayerController : MonoBehaviour
     private float PushSpeed;
     private float Speed;
 
-    private float MoveSpeed;
+    public float MoveSpeed;
 
     public GroundCheck ground;
+    public JumpCheck jump;
+    public LadderCon ladder;
     GameObject gameManagerObj;
     Stop gameManager;
+    private Rigidbody2D rb;
 
     [SerializeField] float setSpeed;
-    [SerializeField] float setJumpPower;
-    [SerializeField] int gravityPower;
+    [SerializeField] float jumpForce;
 
-    private bool isGround = false;
-    private bool isUp = false;
+    public bool isGround = false;
+    public bool canJump = false;
+    public bool isCatch = false;
+    public bool onLadder = false;
 
     public float PlayerSpeed
     {
@@ -35,20 +39,37 @@ public class PlayerController : MonoBehaviour
         PushSpeed = playerSpeed * 0.5f;
         Speed = playerSpeed;
 
+        rb = this.GetComponent<Rigidbody2D>();
         gameManagerObj = GameObject.Find("GameManager");
         gameManager = gameManagerObj.GetComponent<Stop>();
         gameManager.CallInoperable(4.0f);
     }
 
+    private void Update()
+    {
+        
+        Jump();
+        Climp();
+    }
+
     private void FixedUpdate()
     {
         isGround = ground.IsGround();
+        canJump = jump.CanJump();
+        onLadder = ladder.OnLadder();
+
         Move();
         Gravity();
-        Ladder();
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            if(isCatch)
+            {
+            Speed = playerSpeed;
+            isCatch = false;
+            }
+        }
     }
     
-
     private void Move()
     {
         if(isGround)
@@ -63,52 +84,48 @@ public class PlayerController : MonoBehaviour
     {
         if (isGround == false)
         {
-            if(isUp == false)
-            {
-                Debug.Log("下がってる");
-                transform.position += new Vector3(0, -0.2f, 0);
-            }
-
+            transform.position += new Vector3(0, -0.2f, 0);
         }
     }
 
-    private void Ladder()
+    private void Jump()
     {
-        if (isUp)
+        if(canJump)
+        {
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                rb.AddForce(new Vector2(0, jumpForce));
+                
+                isGround = false;
+                Debug.Log("ジャンプ");
+            }
+        }
+    }
+
+    private void Climp()
+    {
+        if (onLadder)
         {
             Ver = Input.GetAxisRaw("Vertical");
-            transform.position += new Vector3(0, Ver, 0);
+            transform.position += new Vector3(0, Ver * 0.02f, 0);
+        }
+        else if(Input.GetKeyUp(KeyCode.S))
+        {
+            Debug.Log("位置調整");
+            transform.position += new Vector3(0, 0.2f, 0);
         }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Box"))
+        if (collision.gameObject.CompareTag("Box"))
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                Debug.Log("持った");
                 Speed = PushSpeed;
-            }
-            if(Input.GetKeyUp(KeyCode.Space))
-            {
-                Debug.Log("離した");
-                Speed = setSpeed;
+                isCatch = true;
             }
         }
+    }
 
-        if(collision.gameObject.CompareTag("Ladder"))
-        {
-            isUp = true;
-        }
-    }
-    
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ladder"))
-        {
-            Debug.Log("出た");
-            isUp = false;
-        }
-    }
 }
