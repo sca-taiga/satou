@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class Wood : MonoBehaviour
+public class Switch: MonoBehaviour
 {
     bool Depature = false;
     private void Update()
@@ -12,8 +12,4 @@ public class Wood : MonoBehaviour
         }
     }
 
-    public void OnSwitch()
-    {
-        Depature = true;
-    }
 }
