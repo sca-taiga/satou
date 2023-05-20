@@ -488,3 +488,371 @@ Received Import Request.
 Start importing Assets/Scenes/Clear.unity using Guid(3b68aa5519d69fd46af7abf0530a4a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5c85369d2b41e87551e2807d0ef593') in 0.002276 seconds 
   Import took 0.005331 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 461.420965 seconds.
+  path: Assets/SunnyLand Artwork/Sprites
+  artifactKey: Guid(b6238935cfd4648cf866141c0ee28c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites using Guid(b6238935cfd4648cf866141c0ee28c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2ab90857f733b4c59f8f0f0ca0b32cd') in 0.001677 seconds 
+  Import took 0.004708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.208923 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player
+  artifactKey: Guid(c38f07c49aff74810b5ee46bc2a90197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/player using Guid(c38f07c49aff74810b5ee46bc2a90197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5df6dc3be4c4da7b89a1da787d6b9c6') in 0.001570 seconds 
+  Import took 0.004252 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002165 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.689 seconds
+Domain Reload Profiling:
+	ReloadAssembly (689ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (551ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (192ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (202ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1841 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.4 MB.
+System memory in use after: 90.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2309.
+Total: 2.441500 ms (FindLiveObjects: 0.257300 ms CreateObjectMapping: 0.088500 ms MarkObjects: 2.073900 ms  DeleteObjects: 0.020500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002095 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.685 seconds
+Domain Reload Profiling:
+	ReloadAssembly (685ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (544ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (188ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (201ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1841 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.4 MB.
+System memory in use after: 90.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2311.
+Total: 2.001100 ms (FindLiveObjects: 0.105200 ms CreateObjectMapping: 0.027000 ms MarkObjects: 1.856000 ms  DeleteObjects: 0.011000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 439.344333 seconds.
+  path: Assets/taiga/アニメーション/Switcn.controller
+  artifactKey: Guid(c322a6235c0460a49993ae37683a02e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/Switcn.controller using Guid(c322a6235c0460a49993ae37683a02e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d31cbb1516cfd257627289fb1648662') in 0.014841 seconds 
+  Import took 0.018080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.120226 seconds.
+  path: Assets/taiga/アニメーション/door.controller
+  artifactKey: Guid(2d36122ab95ef0d488edffa2cb786e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/door.controller using Guid(2d36122ab95ef0d488edffa2cb786e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9423ff93619311eb3bd56deb033c2291') in 0.003019 seconds 
+  Import took 0.006607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.067664 seconds.
+  path: Assets/taiga/アニメーション/player.controller
+  artifactKey: Guid(2d7efd8913ba833458e41b66ed19d6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/player.controller using Guid(2d7efd8913ba833458e41b66ed19d6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5926bed9e979bc69ac0102af50cd4afe') in 0.002936 seconds 
+  Import took 0.005529 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002452 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.688 seconds
+Domain Reload Profiling:
+	ReloadAssembly (689ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (572ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (230ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (160ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1841 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.4 MB.
+System memory in use after: 90.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2313.
+Total: 2.123300 ms (FindLiveObjects: 0.112900 ms CreateObjectMapping: 0.032300 ms MarkObjects: 1.965800 ms  DeleteObjects: 0.011200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 259.624664 seconds.
+  path: Assets/taiga/アニメーション/color01_red_apple.png
+  artifactKey: Guid(565224019d8353540b428b386335c24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/color01_red_apple.png using Guid(565224019d8353540b428b386335c24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9003a458fae3d08c17789f1d2b6340bd') in 0.044631 seconds 
+  Import took 0.047132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.073048 seconds.
+  path: Assets/taiga/アニメーション/fruit_ringo.png
+  artifactKey: Guid(6893aa9ff2104544093612176ea2a90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/fruit_ringo.png using Guid(6893aa9ff2104544093612176ea2a90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c2252f6385d1eac7d349eb3c35068d') in 0.011211 seconds 
+  Import took 0.013646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.959783 seconds.
+  path: Assets/taiga/アニメーション/Apple.png
+  artifactKey: Guid(6893aa9ff2104544093612176ea2a90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/Apple.png using Guid(6893aa9ff2104544093612176ea2a90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a866b295221633195addc4f321ee0b27') in 0.010453 seconds 
+  Import took 0.013117 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003027 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.686 seconds
+Domain Reload Profiling:
+	ReloadAssembly (686ms)
+		BeginReloadAssembly (82ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (557ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (208ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (192ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1841 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.5 MB.
+System memory in use after: 90.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2316.
+Total: 2.124500 ms (FindLiveObjects: 0.114000 ms CreateObjectMapping: 0.035800 ms MarkObjects: 1.937400 ms  DeleteObjects: 0.027700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 141.898864 seconds.
+  path: Assets/taiga/アニメーション/supuer_nihonjin.png
+  artifactKey: Guid(5a1fb126e82f30d4f89a41e322d15554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/supuer_nihonjin.png using Guid(5a1fb126e82f30d4f89a41e322d15554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f15e728c507a81d0b14b6ab4a3fc8cd') in 0.035947 seconds 
+  Import took 0.038969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.744771 seconds.
+  path: Assets/taiga/アニメーション/kari.png
+  artifactKey: Guid(5a1fb126e82f30d4f89a41e322d15554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/kari.png using Guid(5a1fb126e82f30d4f89a41e322d15554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed89227482a70433103cdf814612401') in 0.010587 seconds 
+  Import took 0.013172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 839.915341 seconds.
+  path: Assets/Prefab/Box.prefab
+  artifactKey: Guid(dcebdb0a4cb688b43b915080fcd58e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Box.prefab using Guid(dcebdb0a4cb688b43b915080fcd58e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b59df47f82e7f8b445d4de3351768cd7') in 0.010343 seconds 
+  Import took 0.013801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.185347 seconds.
+  path: Assets/Scenes/Title.unity
+  artifactKey: Guid(566ec001ce1eca841b87a8963a5f585a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Title.unity using Guid(566ec001ce1eca841b87a8963a5f585a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce351862e7a3add27c1c17374a409b4b') in 0.001947 seconds 
+  Import took 0.004717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.674905 seconds.
+  path: Assets/SunnyLand Artwork/Scenes
+  artifactKey: Guid(2fbfde5acb83dcf45971dff2335ebcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Scenes using Guid(2fbfde5acb83dcf45971dff2335ebcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c8fecb87503e073461ab882fcdbfd2') in 0.002670 seconds 
+  Import took 0.005480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.287754 seconds.
+  path: Assets/taiga/DOA.cs
+  artifactKey: Guid(d76fdc5f3fbb32d43a479e039e875a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/DOA.cs using Guid(d76fdc5f3fbb32d43a479e039e875a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332d8a3f38ecc4547f7822de20ed994c') in 0.011788 seconds 
+  Import took 0.014915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.987585 seconds.
+  path: Assets/taiga/アニメーション/Materials
+  artifactKey: Guid(1fc347bf6861e324e8ba888b874f4f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/Materials using Guid(1fc347bf6861e324e8ba888b874f4f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e35125a22bdb05ca7c17782b1b4a6c') in 0.001539 seconds 
+  Import took 0.004103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061451 seconds.
+  path: Assets/taiga/アニメーション/Materials/Apple.mat
+  artifactKey: Guid(aabe74c77178ba94e97c3497f284cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/Materials/Apple.mat using Guid(aabe74c77178ba94e97c3497f284cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e4c718ab333e5affcaa20b7bd080d3') in 0.038885 seconds 
+  Import took 0.041333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/taiga/アニメーション/Materials/kari.mat
+  artifactKey: Guid(e251a80e28170cb40a04eb082c7af6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/taiga/アニメーション/Materials/kari.mat using Guid(e251a80e28170cb40a04eb082c7af6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498965db5dc00ecfb5bc9fde6372462a') in 0.018111 seconds 
+  Import took 0.020871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.502747 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80b9ba1b9530e6823ff53e444e88ae50') in 0.001822 seconds 
+  Import took 0.004486 seconds .
+
