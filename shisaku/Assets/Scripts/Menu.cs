@@ -17,13 +17,13 @@ public class Menu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && setMenu == false)
         {
-            Time.timeScale = 0f;
+            Time.SetTime(0f);
             menu.SetActive(true);
             setMenu = true;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && setMenu == true)
         {
-            Time.timeScale = 1f;
+            Time.SetTime(1f);
             menu.SetActive(false);
             setMenu = false;
         }
@@ -31,7 +31,7 @@ public class Menu : MonoBehaviour
 
     public void OnClickBackButton()
     {
-        Time.timeScale = 1f;
+        Time.SetTime(1f);
         menu.SetActive(false);
         setMenu = false;
     }
