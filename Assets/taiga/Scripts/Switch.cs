@@ -21,7 +21,6 @@ public class Switch : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Door");
         if (collision.gameObject.CompareTag("Player"))
         {
             active = true;
