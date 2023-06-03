@@ -6,6 +6,7 @@ public class GroundCheck : MonoBehaviour
 {
     private string groundTag = "Ground";
     private string ladderTag = "Ladder";
+    private string boxTag = "Box";
     [SerializeField] bool isGround = false;
     private bool isGroundEnter, isGroundStay, isGroundExit;
 
@@ -37,6 +38,10 @@ public class GroundCheck : MonoBehaviour
         {
             isGroundEnter = true;
         }
+        if (collision.tag == boxTag)
+        {
+            isGroundEnter = true;
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -48,6 +53,10 @@ public class GroundCheck : MonoBehaviour
         {
             isGroundStay = true;
         }
+        if (collision.tag == boxTag)
+        {
+            isGroundStay = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -56,6 +65,10 @@ public class GroundCheck : MonoBehaviour
             isGroundExit = true;
         }
         if (collision.tag == ladderTag)
+        {
+            isGroundExit = true;
+        }
+        if (collision.tag == boxTag)
         {
             isGroundExit = true;
         }

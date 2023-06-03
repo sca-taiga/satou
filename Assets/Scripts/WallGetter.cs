@@ -5,11 +5,11 @@ using UnityEngine;
 public class WallGetter : MonoBehaviour
 {
     private bool isWall = false;
-    private bool isWallEnter, isWallStay, isWallExit;
+    private bool isWallStay, isWallExit;
 
     public bool IsWall()
     {
-        if (isWallStay || isWallEnter)
+        if (isWallStay)
         {
             isWall = true;
         }
@@ -18,7 +18,6 @@ public class WallGetter : MonoBehaviour
             isWall = false;
         }
 
-        isWallEnter = false;
         isWallStay = false;
         isWallExit = false;
 
@@ -27,21 +26,14 @@ public class WallGetter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isWallStay = true;
         }
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Player"))
-        {
-            isWallEnter = true;
-        }
-    }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isWallExit = true;
         }

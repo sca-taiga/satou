@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public JumpCheck jump;
     public LadderCon ladder;
     public WallCheckR wallCheckR;
+    public WallCheckL wallCheckL;
     GameObject gameManagerObj;
     Stop gameManager;
     private Rigidbody2D rb;
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour
     public bool isWallL = false;
     public bool canJump = false;
     public bool onLadder = false;
+
+    public bool isWall = false;
 
     public float PlayerSpeed
     {
@@ -61,9 +64,13 @@ public class PlayerController : MonoBehaviour
                 isCatch = false;
             }
         }
+            if (isWallL)
+            {
+                transform.position += new Vector3(Speed * 0.05f, 0, 0);
+            }
             if (isWallR)
             {
-                transform.position -= new Vector3(MoveSpeed * 0.05f, 0, 0);
+                transform.position -= new Vector3(Speed * 0.05f, 0, 0);
             }
     }
 
@@ -72,6 +79,8 @@ public class PlayerController : MonoBehaviour
         isGround = ground.IsGround();
         canJump = jump.CanJump();
         onLadder = ladder.OnLadder();
+        isWallL = wallCheckL.IsWallL();
+        isWallR = wallCheckR.IsWallR();
 
         Move();
         Gravity();
@@ -81,15 +90,31 @@ public class PlayerController : MonoBehaviour
     {
         if(isGround)
         {
-            Hori = Input.GetAxisRaw("Horizontal");
-            MoveSpeed = Speed * Hori;
-            if (!isWallR)
+            if(!isWallL && !isWallR)
             {
+                Hori = Input.GetAxisRaw("Horizontal");
+                MoveSpeed = Speed * Hori;
                 transform.position += new Vector3(MoveSpeed, 0, 0);
             }
+            if(isWallL)
+            {
+                Hori = Input.GetAxisRaw("Horizontal");
+                if(Hori < 0)
+                {
+                    MoveSpeed = Speed * 0;
+                    transform.position += new Vector3(MoveSpeed, 0, 0);
+                }
+            }
         }
-
-
+        if(!isGround)
+        {
+            if(!isWallL && isWallR)
+            {
+                Hori = Input.GetAxisRaw("Horizontal");
+                MoveSpeed = Speed * Hori;
+                transform.position += new Vector3(MoveSpeed / 2, 0, 0);
+            }
+        }
     }
 
     private void Gravity()
@@ -101,18 +126,17 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Jump()
-    {/*
+    {
         if(canJump)
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                rb.AddForce(new Vector2(0, jumpForce));
-                
-                
+//              rb.AddForce(new Vector2(0, jumpForce));
+                rb.velocity += (Vector2.up * jumpForce) * Time.fixedDeltaTime / rb.mass;
                 isGround = false;
                 Debug.Log("ƒWƒƒƒ“ƒv");
             }
-        }*/
+        }
     }
 
     private void Climp()
@@ -122,7 +146,7 @@ public class PlayerController : MonoBehaviour
             Ver = Input.GetAxisRaw("Vertical");
             transform.position += new Vector3(0, Ver * 0.01f, 0);
         }
-        else if(Input.GetKeyUp(KeyCode.S))
+        else if(Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
         {
             transform.position += new Vector3(0, 0.15f, 0);
         }

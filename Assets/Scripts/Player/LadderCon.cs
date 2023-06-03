@@ -5,12 +5,11 @@ using UnityEngine.Tilemaps;
 
 public class LadderCon : MonoBehaviour
 {
-//    [SerializeField] Tilemap tilemap;
-//    [SerializeField] Sprite sprite;
+    //    [SerializeField] Tilemap tilemap;
+    //    [SerializeField] Sprite sprite;
+
     private bool onLadder = false;
     private bool LadderEnter, LadderExit;
-
-
     private string ladderTag = "Ladder";
 
 
