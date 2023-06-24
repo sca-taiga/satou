@@ -182,7 +182,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("Clear");
+        if(collision.gameObject.CompareTag("Goal"))
+        {
+            SceneManager.LoadScene("Clear");
+        }
     }
 
 
