@@ -8,11 +8,7 @@ public class SceneChange : MonoBehaviour
 {
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("Stage");
-    }
-    public void OnClickReStartButton()
-    {
-        SceneManager.LoadScene("Title");
+        SceneManager.LoadScene("Stage1");
     }
     public void OnClickClearButton()
     {
