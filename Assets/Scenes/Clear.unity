@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 435368155}
         m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: OnClickReStartButton
+        m_MethodName: OnClickStartButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -478,7 +478,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 620553833}
         m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: OnClickStartButton
+        m_MethodName: OnClickQuitButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
