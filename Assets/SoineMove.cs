@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 /// <summary> Spineアニメーションの再生を確認サンプルクラス </summary>
 public class SoineMove : MonoBehaviour
 {
@@ -11,6 +10,8 @@ public class SoineMove : MonoBehaviour
 	/// <summary> 再生するアニメーション名 </summary>
 	[SerializeField]
 	private string testAnimationName = "jump/jump";
+	[SerializeField]
+	private string testAnimationName2 = "walk/aruku";
 
 	/// <summary> ゲームオブジェクトに設定されているSkeletonAnimation </summary>
 	private SkeletonAnimation skeletonAnimation = default;
@@ -30,11 +31,11 @@ public class SoineMove : MonoBehaviour
 
 	private void Update()
 	{
-		// Spaceキーの入力でアニメーションを切り替えるテスト
-		if (Input.GetKeyDown(KeyCode.Space))
-		//Aキーの入力で←左に移動するアニメーションをやりたい
-		if (Input.GetKeyDown(KeyCode.A))
 
+        //Spaceキーでジャンプ
+        if (Input.GetKeyDown(KeyCode.Space))
+		//Aキーで←移動
+		if (Input.GetKeyDown(KeyCode.A))
 			{
 			
 			PlayAnimation();
@@ -50,6 +51,8 @@ public class SoineMove : MonoBehaviour
 	{
 		// アニメーション「testAnimationName」を再生
 		spineAnimationState.SetAnimation(0, testAnimationName, true);
+		// アニメーション「testAnimationName」を再生
+		spineAnimationState.SetAnimation(0, testAnimationName2, true);
 	}
 
 }

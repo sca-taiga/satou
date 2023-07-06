@@ -819,6 +819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testAnimationName: jump/jump
+  testAnimationName2: walk/aruku
 --- !u!114 &97924185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,8 +917,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97924183}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.1}
+  m_LocalPosition: {x: -0.17, y: -0.63, z: 0}
+  m_LocalScale: {x: 0.68519825, y: 0.55274564, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
