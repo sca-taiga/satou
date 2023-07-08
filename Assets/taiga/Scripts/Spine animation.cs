@@ -9,7 +9,7 @@ public class SampleSpineAnimationController : MonoBehaviour
 
 	/// <summary> 再生するアニメーション名 </summary>
 	[SerializeField]
-	private string testAnimationName = "jump";
+	private string testAnimationName = "jump/jump";
 
 	/// <summary> ゲームオブジェクトに設定されているSkeletonAnimation </summary>
 	private SkeletonAnimation skeletonAnimation = default;

@@ -819,7 +819,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testAnimationName: jump/jump
-  testAnimationName2: walk/aruku
 --- !u!114 &97924185
 MonoBehaviour:
   m_ObjectHideFlags: 0

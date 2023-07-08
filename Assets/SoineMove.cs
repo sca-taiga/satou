@@ -10,8 +10,6 @@ public class SoineMove : MonoBehaviour
 	/// <summary> 再生するアニメーション名 </summary>
 	[SerializeField]
 	private string testAnimationName = "jump/jump";
-	[SerializeField]
-	private string testAnimationName2 = "walk/aruku";
 
 	/// <summary> ゲームオブジェクトに設定されているSkeletonAnimation </summary>
 	private SkeletonAnimation skeletonAnimation = default;
@@ -32,12 +30,10 @@ public class SoineMove : MonoBehaviour
 	private void Update()
 	{
 
-        //Spaceキーでジャンプ
-        if (Input.GetKeyDown(KeyCode.Space))
-		//Aキーで←移動
-		if (Input.GetKeyDown(KeyCode.A))
-			{
-			
+		//Spaceキーでジャンプ
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+
 			PlayAnimation();
 
 		}
@@ -51,8 +47,7 @@ public class SoineMove : MonoBehaviour
 	{
 		// アニメーション「testAnimationName」を再生
 		spineAnimationState.SetAnimation(0, testAnimationName, true);
-		// アニメーション「testAnimationName」を再生
-		spineAnimationState.SetAnimation(0, testAnimationName2, true);
+
 	}
 
 }
