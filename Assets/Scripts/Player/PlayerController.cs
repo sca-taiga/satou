@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Security.Cryptography;
-using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -29,16 +28,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float setSpeed;
     [SerializeField] float jumpForce;
 
-    public bool isGround = false;
-    public bool isCatch = false;
-    public bool isWallR = false;
-    public bool isWallL = false;
-    public bool isBoxR = false;
-    public bool isBoxL = false;
-    public bool isPushR = false;
-    public bool isPushL = false;
-    public bool canJump = false;
-    public bool onLadder = false;
+    private bool isGround = false;
+    private bool isCatch = false;
+    private bool isWallR = false;
+    private bool isWallL = false;
+    private bool isBoxR = false;
+    private bool isBoxL = false;
+    private bool isPushR = false;
+    private bool isPushL = false;
+    private bool canJump = false;
+    private bool onLadder = false;
 
     public bool isWall = false;
 
@@ -63,8 +62,6 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         
-        Jump();
-        Climp();
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             if(isCatch)
@@ -72,6 +69,14 @@ public class PlayerController : MonoBehaviour
                 Speed = playerSpeed;
                 isCatch = false;
             }
+        }
+        if(onLadder)
+        {
+            rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+        if(!onLadder)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
         }
 
     }
@@ -90,6 +95,8 @@ public class PlayerController : MonoBehaviour
 
         Move();
         Gravity();
+        Jump();
+        Climp();
     }
     
     private void Move()
@@ -172,22 +179,12 @@ public class PlayerController : MonoBehaviour
         {
             Ver = Input.GetAxisRaw("Vertical");
             transform.position += new Vector3(0, Ver * 0.01f, 0);
-        }
-        else if(Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            transform.position += new Vector3(0, 0.15f, 0);
-        }
-    }
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.CompareTag("Goal"))
-        {
-            SceneManager.LoadScene("Clear");
+            if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                transform.position += new Vector3(0, 0.15f, 0);
+            }
         }
     }
-
 
     private void OnTriggerStay2D(Collider2D collision)
     {

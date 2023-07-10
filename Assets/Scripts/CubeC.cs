@@ -12,8 +12,8 @@ public class CubeC : MonoBehaviour
     public PlayerController playercontroller;
 
     private bool isGround = false;
-    public bool isWallR = false;
-    public bool isWallL = false;
+    private bool isWallR = false;
+    private bool isWallL = false;
     private float Speed;
 
     private void FixedUpdate()

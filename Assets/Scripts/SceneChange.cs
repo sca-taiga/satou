@@ -6,9 +6,24 @@ using UnityEngine.UI;
 
 public class SceneChange : MonoBehaviour
 {
+    Color color;
+    float cla;
+    float speed = 0.01f;
+    [SerializeField] GameObject target;
+    private void Start()
+    {
+        color = target.GetComponent<Image>().color;
+    }
+
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("Stage1");
+        Lighting();
+        //SceneManager.LoadScene("Stage");
+        
+    }
+    public void OnClickReStartButton()
+    {
+        SceneManager.LoadScene("Title");
     }
     public void OnClickClearButton()
     {
@@ -28,4 +43,30 @@ public class SceneChange : MonoBehaviour
 #endif
     }
 
+    IEnumerator Display()
+    {
+        while (cla > 0f)
+        {
+            cla -= speed;
+            color.a = cla;
+            yield return null;
+        }
+    }
+    IEnumerator Restore()
+    {
+        while (cla < 1f)
+        {
+            cla += speed;
+            color.a = cla;
+            yield return null;
+        }
+    }
+    private void Lighting()
+    {
+        while (cla < 255f)
+        {
+            cla += speed;
+            color.a = cla;
+        }
+    }
 }
