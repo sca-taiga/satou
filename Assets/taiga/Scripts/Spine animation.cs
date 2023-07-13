@@ -3,6 +3,7 @@ using UnityEngine;
 using Spine;
 
 
+
 /// <summary> Spineアニメーションの再生を確認サンプルクラス </summary>
 public class SampleSpineAnimationController : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class SampleSpineAnimationController : MonoBehaviour
 	/// <summary> 再生するアニメーション名 </summary>
 	[SerializeField]
 	private string testAnimationName = "jump/jump";
-
+	
 	/// <summary> ゲームオブジェクトに設定されているSkeletonAnimation </summary>
 	private SkeletonAnimation skeletonAnimation = default;
 
@@ -44,5 +45,7 @@ public class SampleSpineAnimationController : MonoBehaviour
 		// アニメーション「testAnimationName」を再生
 		spineAnimationState.SetAnimation(0, testAnimationName, true);
 	}
+	
+
 
 }
