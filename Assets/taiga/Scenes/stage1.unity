@@ -819,6 +819,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testAnimationName: jump/jump
+  testAnimationName2: walk/aruku
+  testAnimationName3: walk/aruku
+  testAnimationName4: pushpull/pull
+  testAnimationName5: pushpull/push
 --- !u!114 &97924185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,7 +860,7 @@ MonoBehaviour:
   disableRenderingOnOverride: 1
   updateTiming: 1
   unscaledTime: 0
-  _animationName: wait/taiki
+  _animationName: pushpull/push
   loop: 1
   timeScale: 1
 --- !u!23 &97924186
