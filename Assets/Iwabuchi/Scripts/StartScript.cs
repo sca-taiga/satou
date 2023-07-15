@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class SceneChange : MonoBehaviour
+public class StartScript : MonoBehaviour
 {
     Color color;
     float cla;
@@ -17,30 +17,9 @@ public class SceneChange : MonoBehaviour
 
     public void OnClickStartButton()
     {
-        Lighting();
-        //SceneManager.LoadScene("Stage");
-        
-    }
-    public void OnClickReStartButton()
-    {
-        SceneManager.LoadScene("Title");
-    }
-    public void OnClickClearButton()
-    {
-        SceneManager.LoadScene("Clear");
-    }
-    public void OnClickTitleButton()
-    {
-        SceneManager.LoadScene("Title");
-    }
+        //Lighting();
+        SceneManager.LoadScene("Stage1");
 
-    public void OnClickQuitButton()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-    Application.Quit();
-#endif
     }
 
     IEnumerator Display()
@@ -52,6 +31,7 @@ public class SceneChange : MonoBehaviour
             yield return null;
         }
     }
+
     IEnumerator Restore()
     {
         while (cla < 1f)
@@ -61,6 +41,7 @@ public class SceneChange : MonoBehaviour
             yield return null;
         }
     }
+
     private void Lighting()
     {
         while (cla < 255f)

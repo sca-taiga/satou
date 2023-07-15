@@ -23,17 +23,13 @@ public class Warp : MonoBehaviour
     {
         if (isWarp)
         {
-            if(Input.GetKey(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.DownArrow))
             {
-//                cla = sr.color.a;
-//                StartCoroutine(Display());
-                if (cla <= 0f)
-                {
-                    isWarp = false;
-                    GameObject.Find("Player").transform.position = targetPos + new Vector2(0, 2);
-                    target.GetComponent<Collider2D>().isTrigger = true;
-                    Invoke("TriggerC", 1f);
-                }
+
+                GameObject.Find("Player").transform.position = targetPos + new Vector2(0, 2);
+                target.GetComponent<Collider2D>().isTrigger = true;
+                Invoke("TriggerC", 1f);
+                isWarp = false;
             }
         }
     }
@@ -43,25 +39,6 @@ public class Warp : MonoBehaviour
         target.GetComponent<Collider2D>().isTrigger = false;
     }
 
-    IEnumerator Display()
-    {
-        while (cla > 0f)
-        {
-            cla -= speed;
-            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, cla);
-            yield return null;
-        }
-    }
-
-    IEnumerator Restore()
-    {
-        while (cla < 255f)
-        {
-            cla += speed;
-            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, cla);
-            yield return null;
-        }
-    }
     
     private void OnCollisionStay2D(Collision2D collision)
     {
