@@ -447,6 +447,7 @@ GameObject:
   - component: {fileID: 187677765335850887}
   - component: {fileID: 187677765335850883}
   - component: {fileID: 187677765335850884}
+  - component: {fileID: 1407294407}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -461,7 +462,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187677765335850888}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.22, y: -0.82, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
@@ -547,16 +548,6 @@ MonoBehaviour:
   pushCheckL: {fileID: 187677764601614837}
   setSpeed: 1
   jumpForce: 250
-  isGround: 0
-  isCatch: 0
-  isWallR: 0
-  isWallL: 0
-  isBoxR: 0
-  isBoxL: 0
-  isPushR: 0
-  isPushL: 0
-  canJump: 0
-  onLadder: 0
   isWall: 0
 --- !u!50 &187677765335850883
 Rigidbody2D:
@@ -595,3 +586,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0.010410826, y: 0}
   m_Size: {x: 0.34219354, y: 0.63}
   m_Direction: 0
+--- !u!114 &1407294407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187677765335850888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1be406a02d423443b141ac5b5c9ab39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
