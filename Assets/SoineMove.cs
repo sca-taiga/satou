@@ -27,6 +27,7 @@ public class SoineMove : MonoBehaviour
 	private bool JumpFlagg = false;
 	private bool WoakFlagg = false;
 	private bool PushpullFlagg = false;
+	private bool pushFlagg = false;
 	/// <summary> ゲームオブジェクトに設定されているSkeletonAnimation </summary>
 	private SkeletonAnimation skeletonAnimation = default;
 
@@ -56,11 +57,7 @@ public class SoineMove : MonoBehaviour
 		//Aキーで左移動
         else if (Input.GetKeyDown(KeyCode.A))
         {
-			//WorkAnimation();
-			WoakFlagg = true;
-			PlayAnimation();
 		}
-		//Dキーで左移動
 		else if (Input.GetKeyDown(KeyCode.D))
 		{
 			//WorkAnimation();
@@ -70,15 +67,14 @@ public class SoineMove : MonoBehaviour
 		//shift+Aキーで物を押す引く
 		else if (Input.GetKeyDown(KeyCode.LeftShift))
 		{
-			//WorkAnimation();
-			PushpullFlagg = true;
+		PushpullFlagg = true;
 			PlayAnimation();
 		}
 		//shift+Dキーで物を押す引く
-		else if (Input.GetKeyDown(KeyCode.LeftShift))
+		if (Input.GetKeyDown(KeyCode. D))
 		{
 			//WorkAnimation();
-			PushpullFlagg = true;
+			pushFlagg = true;
 			PlayAnimation();
 		}
 
@@ -111,10 +107,12 @@ public class SoineMove : MonoBehaviour
 			spineAnimationState.SetAnimation(0, testAnimationName4, true);
 		PushpullFlagg = false;
 	}
-		if (PushpullFlagg)
+		if (pushFlagg)
 			// アニメーション「testAnimationName」を再生
 			spineAnimationState.SetAnimation(0, testAnimationName5, true);
-		PushpullFlagg = false;
+		pushFlagg = false;
+	}
+
 		/*
 		private void WorkAnimation()
 		{
@@ -138,5 +136,5 @@ public class SoineMove : MonoBehaviour
 	}
 
 }
-}
+
 
