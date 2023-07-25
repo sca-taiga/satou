@@ -10,6 +10,7 @@ TagManager:
   - Push
   - Jump
   - Goal
+  - Candy
   layers:
   - Default
   - TransparentFX
