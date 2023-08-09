@@ -8,7 +8,7 @@ public class Switch : MonoBehaviour
     float speed = 0.5f;
 
     bool active =false;
-
+    [SerializeField] private DoorScript door;
     void Update()
     {
         /*
@@ -23,6 +23,7 @@ public class Switch : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            door.isOpen=true;
             active = true;
             Debug.Log("Door");
         }

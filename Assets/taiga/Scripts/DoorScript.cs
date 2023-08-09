@@ -17,13 +17,17 @@ public class DoorScript : MonoBehaviour
 
     void Update()
     {
-        if (isOpen && transform.position.y < openY)
+        //if (isOpen && transform.position.y < openY)
+        //{
+        //    transform.position += Vector3.up * speed * Time.deltaTime;
+        //}
+        //else if (!isOpen && transform.position.y > defaultY)
+        //{
+        //    transform.position -= Vector3.up * speed * Time.deltaTime;
+        //}
+        if (isOpen)
         {
-            transform.position += Vector3.up * speed * Time.deltaTime;
-        }
-        else if (!isOpen && transform.position.y > defaultY)
-        {
-            transform.position -= Vector3.up * speed * Time.deltaTime;
+            //animator
         }
     }
 }
