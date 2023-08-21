@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Warp : MonoBehaviour
 {
@@ -8,14 +9,20 @@ public class Warp : MonoBehaviour
     [SerializeField] GameObject player;
     private Vector2 targetPos;
     private bool isWarp;
-    SpriteRenderer sr;
-    float cla;
-    float speed = 0.01f;
+
+    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer targetSpriteRenderer;
+    public Sprite stopSprite; // 1�ڂ̉摜
+    public Sprite bootSprite; // 2�ڂ̉摜
+    private bool isSprite1Active = true;
 
     private void Start()
     {
         targetPos = target.transform.position;
-        sr = player.GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        targetSpriteRenderer = target.GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = stopSprite;
+        targetSpriteRenderer.sprite = stopSprite;
         isWarp = false;
     }
 
@@ -44,8 +51,10 @@ public class Warp : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            spriteRenderer.sprite = bootSprite;
+            targetSpriteRenderer.sprite = bootSprite;
+            //-2.5 -1.8
             isWarp = true;
-
         }
     }
 
@@ -53,16 +62,9 @@ public class Warp : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            spriteRenderer.sprite = stopSprite;
+            targetSpriteRenderer.sprite = stopSprite;
             isWarp = false;
         }
     }
-    /*
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            isWarp = true;
-
-        }
-    }*/
 }
