@@ -32,7 +32,11 @@ public class DoorScript : MonoBehaviour
         {
             col.isTrigger = false;
             spriteRenderer.sprite = OpenSprite;
-
+        }
+        if(!isOpen)
+        {
+            col.isTrigger = true;
+            spriteRenderer.sprite = ClauseSprite;
         }
     }
 

@@ -3,51 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 public class StartScript : MonoBehaviour
 {
-    Color color;
-    float cla;
-    float speed = 0.01f;
-    [SerializeField] GameObject target;
+    public Image blackImage;  // 黒い画像
+    public float fadeSpeed = 2.5f;  // フェードの速さ
+    private bool isFading = false;  // フェード中かどうか
+
     private void Start()
     {
-        color = target.GetComponent<Image>().color;
+        blackImage.canvasRenderer.SetAlpha(0.0f);  // 初めは透明に設定
     }
 
-    public void OnClickStartButton()
+    private void Update()
     {
-        //Lighting();
-        SceneManager.LoadScene("Stage1");
-
-    }
-
-    IEnumerator Display()
-    {
-        while (cla > 0f)
+        if (isFading)
         {
-            cla -= speed;
-            color.a = cla;
-            yield return null;
+            blackImage.CrossFadeAlpha(1.0f, fadeSpeed, false);  // 透明度を濃くする
+            Debug.Log(blackImage.canvasRenderer.GetAlpha());
+            if (blackImage.canvasRenderer.GetAlpha() >= 0.8f)
+            {
+                Debug.Log("黒くなったよー");
+                SceneManager.LoadScene("StageSelect");  // シーン移動
+            }
         }
     }
 
-    IEnumerator Restore()
+    public void OnButtonClicked()
     {
-        while (cla < 1f)
-        {
-            cla += speed;
-            color.a = cla;
-            yield return null;
-        }
-    }
-
-    private void Lighting()
-    {
-        while (cla < 255f)
-        {
-            cla += speed;
-            color.a = cla;
-        }
+        isFading = true;
+        Debug.Log("isFading: " + isFading); // 追加
     }
 }

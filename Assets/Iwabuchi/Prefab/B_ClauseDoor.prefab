@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2560672559793802798}
   - component: {fileID: 2560672559793802799}
-  - component: {fileID: 2560672559793802796}
   - component: {fileID: 2560672559793802797}
+  - component: {fileID: -6395088263788372062}
   m_Layer: 0
   m_Name: B_ClauseDoor
   m_TagString: Untagged
@@ -84,7 +84,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2560672559793802796
+--- !u!114 &2560672559793802797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2560672559793802802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d37e2b87322c534eb940f16f2ee282b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
+  door: {fileID: 2560672559793802802}
+  ClauseSprite: {fileID: 21300000, guid: 2fe93827781239c4fa377ad35291ec0c, type: 3}
+  OpenSprite: {fileID: 21300000, guid: bb5f9842fe2b0df469095489589faae9, type: 3}
+--- !u!61 &-6395088263788372062
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +110,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -110,20 +126,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2738854, y: 2.5477707}
   m_EdgeRadius: 0
---- !u!114 &2560672559793802797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2560672559793802802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d37e2b87322c534eb940f16f2ee282b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isOpen: 0
-  door: {fileID: 2560672559793802802}
-  newSprite: {fileID: 21300000, guid: bb5f9842fe2b0df469095489589faae9, type: 3}
-  sprite1: {fileID: 21300000, guid: 2fe93827781239c4fa377ad35291ec0c, type: 3}
-  sprite2: {fileID: 21300000, guid: bb5f9842fe2b0df469095489589faae9, type: 3}

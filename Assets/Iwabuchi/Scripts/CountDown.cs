@@ -5,27 +5,37 @@ using UnityEngine.UI;
 
 public class CountDown : MonoBehaviour
 {
-    [SerializeField] float CountDownTime;
-    [SerializeField] private Text TextCountDown;
-    [SerializeField] private GameObject StartPanel;
-/*
-    void Start()
+    [SerializeField] float initialCountDownTime;
+    private float countDownTime;
+    [SerializeField] private Text textCountDown;
+    [SerializeField] private GameObject startPanel;
+
+    private bool isCounting = true;
+
+    private void Start()
     {
-        CountDownTime = 4;
+        ResetCountDown();
     }
-*/
-    // Update is called once per frame
+
     void Update()
     {
-        if(CountDownTime > 0)
+        if(countDownTime > 0)
         {
-            TextCountDown.text = (( int) (CountDownTime)).ToString("0");
-            CountDownTime -= Time.deltaTime;
+            textCountDown.text = (( int) (countDownTime)).ToString("0");
+            countDownTime -= Time.deltaTime;
         }
+        else
+        {
+            isCounting = false;
+            startPanel.SetActive(false);
+        }
+    }
 
-        if(CountDownTime < 0)
-        {
-            StartPanel.SetActive(false);
-        }
+    public void ResetCountDown()
+    {
+        countDownTime = initialCountDownTime;
+        textCountDown.text = ((int)(countDownTime + 1)).ToString("0");
+        isCounting = true;
+        startPanel.SetActive(true);
     }
 }

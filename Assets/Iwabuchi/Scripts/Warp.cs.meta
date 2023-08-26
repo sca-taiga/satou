@@ -3,7 +3,12 @@ guid: 04c4e4f5acd890d4bb2df3356638a7d8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - warp: {instanceID: 0}
+  - target: {instanceID: 0}
+  - player: {instanceID: 0}
+  - stopSprite: {fileID: 21300000, guid: 25b263da5c3a70c45b816cc76f7d3d3e, type: 3}
+  - bootSprite: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

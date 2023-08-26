@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Warp : MonoBehaviour
 {
-    [SerializeField] GameObject target;
+    [SerializeField] GameObject warp;
+    [SerializeField] GameObject target;//ÉèÅ[ÉvêÊ
     [SerializeField] GameObject player;
     private Vector2 targetPos;
+    private Vector2 warpPos;
+    private Vector2 positioning = new Vector2 (0,0.32f);
     private bool isWarp;
 
     private SpriteRenderer spriteRenderer;
@@ -19,6 +24,7 @@ public class Warp : MonoBehaviour
     private void Start()
     {
         targetPos = target.transform.position;
+        warpPos = warp.transform.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
         targetSpriteRenderer = target.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = stopSprite;
@@ -30,7 +36,7 @@ public class Warp : MonoBehaviour
     {
         if (isWarp)
         {
-            if (Input.GetKey(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             {
 
                 GameObject.Find("Player").transform.position = targetPos + new Vector2(0, 2);
@@ -54,6 +60,8 @@ public class Warp : MonoBehaviour
             spriteRenderer.sprite = bootSprite;
             targetSpriteRenderer.sprite = bootSprite;
             //-2.5 -1.8
+            warp.transform.position = warpPos + positioning;
+            target.transform.position = targetPos + positioning;
             isWarp = true;
         }
     }
@@ -64,6 +72,8 @@ public class Warp : MonoBehaviour
         {
             spriteRenderer.sprite = stopSprite;
             targetSpriteRenderer.sprite = stopSprite;
+            warp.transform.position = warpPos - positioning;
+            target.transform.position = targetPos - positioning;
             isWarp = false;
         }
     }

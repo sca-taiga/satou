@@ -8,7 +8,8 @@ public class Switch : MonoBehaviour
     float speed = 0.5f;
     bool active =false;
     //↑いる？
-    [SerializeField] private List<DoorScript> doors = new List<DoorScript>();
+    //多分そっちで用意してたやつのスクリプトのままだから書き換えておいたby岩渕
+    [SerializeField] private List<DoorScript> doors = new List<DoorScript>();//対応するドアのリスト
     void Update()
     {
         /*
@@ -39,6 +40,13 @@ public class Switch : MonoBehaviour
             active = true;
             Debug.Log("Door");
             */
+        }
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            foreach (var door in doors)
+            {
+                door.isOpen = true;
+            }
         }
     }
 }

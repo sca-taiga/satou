@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PageManager2 : MonoBehaviour
 {
@@ -26,6 +27,5 @@ public class PageManager2 : MonoBehaviour
     {
         nowPage = (nowPage % 3) + 1; // ページ番号を1から3までループ
         UpdatePageVisibility();
-        Debug.Log("ページ切り替え: nowPage = " + nowPage);
     }
 }

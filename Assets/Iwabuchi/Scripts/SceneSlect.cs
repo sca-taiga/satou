@@ -41,4 +41,8 @@ public class SceneSlect : MonoBehaviour
     {
         SceneManager.LoadScene("Stage9");
     }
+    public void OnClickStageTen()
+    {
+        SceneManager.LoadScene("Stage10");
+    }
 }

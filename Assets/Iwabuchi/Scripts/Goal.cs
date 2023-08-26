@@ -24,6 +24,46 @@ public class Goal : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "Stage2")
             {
+                SceneManager.LoadScene("Stage3");
+                ClearFlag = false;
+            }
+            if (SceneManager.GetActiveScene().name == "Stage3")
+            {
+                SceneManager.LoadScene("Stage4");
+                ClearFlag = false;
+            }
+            if (SceneManager.GetActiveScene().name == "Stage4")
+            {
+                SceneManager.LoadScene("Stage5");
+                ClearFlag = false;
+            }
+            if (SceneManager.GetActiveScene().name == "Stage5")
+            {
+                SceneManager.LoadScene("Stage6");
+                ClearFlag = false;
+            }
+            if (SceneManager.GetActiveScene().name == "Stage6")
+            {
+                SceneManager.LoadScene("Stage7");
+                ClearFlag = false;
+            }
+            if (SceneManager.GetActiveScene().name == "Stage7")
+            {
+                SceneManager.LoadScene("Stage8");
+                ClearFlag = false;
+            }
+            if (SceneManager.GetActiveScene().name == "Stage8")
+            {
+                SceneManager.LoadScene("Stage9");
+                ClearFlag = false;
+            }
+            if (SceneManager.GetActiveScene().name == "Stage9")
+            {
+                SceneManager.LoadScene("Stage10");
+                ClearFlag = false;
+            }
+            if (SceneManager.GetActiveScene().name == "Stage10")
+            {
                 SceneManager.LoadScene("Clear");
                 ClearFlag = false;
             }
