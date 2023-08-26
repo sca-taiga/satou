@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000011444092}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000015258789, y: -0.000011444092}
+  m_SizeDelta: {x: -0.000061035, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135291868
 MonoBehaviour:
@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30B9\u30C6\u30FC\u30B8\u9078\u629E"
+  m_Text: "\u30B9\u30C6\u30FC\u30B8\u30BB\u30EC\u30AF\u30C8"
 --- !u!222 &135291869
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -550,6 +550,7 @@ GameObject:
   - component: {fileID: 548255872}
   - component: {fileID: 548255871}
   - component: {fileID: 548255870}
+  - component: {fileID: 548255873}
   m_Layer: 5
   m_Name: endButton
   m_TagString: Untagged
@@ -659,6 +660,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548255868}
   m_CullTransparentMesh: 1
+--- !u!114 &548255873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548255868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece401143bcb8a94ebacd35804bff274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &559440310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,6 +1033,7 @@ GameObject:
   - component: {fileID: 1602248131}
   - component: {fileID: 1602248130}
   - component: {fileID: 1602248129}
+  - component: {fileID: 1602248132}
   m_Layer: 5
   m_Name: sutatebutton
   m_TagString: Untagged
@@ -1129,6 +1143,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602248127}
   m_CullTransparentMesh: 1
+--- !u!114 &1602248132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602248127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9dbeb0015108d04a9f3ae8f30aeec8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1693525300
 GameObject:
   m_ObjectHideFlags: 0
