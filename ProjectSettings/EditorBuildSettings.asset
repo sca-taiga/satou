@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/taiga/Scenes/menu.unity
+    guid: 4dbd3c95b353d764e9006aebb5ee5195
+  - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 699346cc4602e4e46b7166fe17a09171
   - enabled: 1
